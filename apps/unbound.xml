@@ -2,14 +2,14 @@
 <Container version="2">
   <Name>unbound</Name>
   <Repository>kutzilla/unbound:latest</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/kutzilla/unbound</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
-  <Overview/>
+  <Support>https://forums.unraid.net/topic/111818-support-unbound/</Support>
+  <Project>https://github.com/kutzilla/unbound-docker</Project>
+  <Overview>Unbound is a validating, recursive, and caching DNS resolver.  It can be used to create your own recursive DNS-Server at home. You can use Unbound for services such as Pi-Hole (Here is a tutorial how to configure Pi-Hole with Unbound: https://www.youtube.com/watch?v=FnFtWsZ8IP0&amp;amp;t=695s) or you can create custom DNS Records for your local network.</Overview>
   <Category>Network:DNS Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
@@ -17,10 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1627291744</DateInstalled>
+  <DateInstalled>1627303919</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>Unbound is a validating, recursive, and caching DNS resolver.  It can be used to create your own recursive DNS-Server at home. You can use Unbound for services such as Pi-Hole (Here is a tutorial how to configure Pi-Hole with Unbound: https://www.youtube.com/watch?v=FnFtWsZ8IP0&amp;amp;t=695s) or you can create custom DNS Records for your local network.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -38,14 +38,14 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/unbound</HostDir>
+      <HostDir/>
       <ContainerDir>/opt/unbound/etc/unbound/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="TCP DNS Port" Target="53" Default="5335" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5335</Config>
-  <Config Name="UDP DNS Port" Target="53" Default="5335" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5335</Config>
-  <Config Name="Config Path" Target="/opt/unbound/etc/unbound/" Default="/mnt/user/appdata/unbound" Mode="rw" Description="Container Path: /opt/unbound/etc/unbound/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/unbound</Config>
+  <Config Name="TCP DNS Port" Target="53" Default="" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5335</Config>
+  <Config Name="UDP DNS Port" Target="53" Default="" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5335</Config>
+  <Config Name="Config Path" Target="/opt/unbound/etc/unbound/" Default="" Mode="rw" Description="Container Path: /opt/unbound/etc/unbound/" Type="Path" Display="advanced" Required="false" Mask="false"/>
 </Container>
