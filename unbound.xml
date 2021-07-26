@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>unbound</Name>
+  <Repository>kutzilla/unbound:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>Network:DNS Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/kutzilla/unbound-docker/master/unbound.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1627291744</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5335</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5335</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/unbound</HostDir>
+      <ContainerDir>/opt/unbound/etc/unbound/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="TCP DNS Port" Target="53" Default="5335" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5335</Config>
+  <Config Name="UDP DNS Port" Target="53" Default="5335" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">5335</Config>
+  <Config Name="Config Path" Target="/opt/unbound/etc/unbound/" Default="/mnt/user/appdata/unbound" Mode="rw" Description="Container Path: /opt/unbound/etc/unbound/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/unbound</Config>
+</Container>
