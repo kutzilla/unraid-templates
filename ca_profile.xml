@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/kutzilla/unraid-templates/master/kutzilla/images/avatar.jpg</Icon>
+  <Profile>Creating Docker templates for my personal use. Maybe some of them are helpful</Profile>
+  <DonateLink>paypal.me/matthiaskutz</DonateLink>
+  <DonateText>I do this just for fun. But if you want donate, use this link.</DonateText>
+</Maintainer>
