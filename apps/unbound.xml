@@ -13,7 +13,7 @@
   <Category>Network:DNS Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/kutzilla/unbound-docker/master/unbound.png</Icon>
+  <Icon>https://raw.githubusercontent.com/kutzilla/unraid-templates/master/images/unbound.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
