@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name/>
+  <Repository>kutzilla/hetzner-ddns:latest</Repository>
+  <Registry>https://hub.docker.com/r/kutzilla/hetzner-ddns</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/kutzilla/docker-hetzner-ddns</Project>
+  <Overview/>
+  <Category>Network:DNS Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/kutzilla/unraid-templates/master/images/hetzner-ddns.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1633621338</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>example.com</Value>
+      <Name>ZONE_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>my-secret-api-token</Value>
+      <Name>API_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>A</Value>
+      <Name>RECORD_TYPE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Zone Name" Target="ZONE_NAME" Default="" Mode="" Description="The DNS zone that DDNS updates should be applied to." Type="Variable" Display="always" Required="true" Mask="false">example.com</Config>
+  <Config Name="API Token" Target="API_TOKEN" Default="" Mode="" Description="Your Hetzner  API token." Type="Variable" Display="always" Required="true" Mask="false">my-secret-api-token</Config>
+  <Config Name="Record Type" Target="RECORD_TYPE" Default="" Mode="" Description="The record type of your zone. If your zone uses an IPv4 address use A. Use AAAA if it uses an IPv6 address." Type="Variable" Display="always" Required="true" Mask="false">A</Config>
+</Container>
