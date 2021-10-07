@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name/>
+  <Name>hetzner-ddns</Name>
   <Repository>kutzilla/hetzner-ddns:latest</Repository>
   <Registry>https://hub.docker.com/r/kutzilla/hetzner-ddns</Registry>
   <Network>bridge</Network>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633621338</DateInstalled>
+  <DateInstalled>1633621554</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
