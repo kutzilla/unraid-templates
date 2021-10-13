@@ -7,9 +7,9 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/114777-support-hetzner-ddns/</Support>
+  <Support/>
   <Project>https://github.com/kutzilla/docker-hetzner-ddns</Project>
-  <Overview/>
+  <Overview>This Docker image will allow you to use the Hetzner DNS Service (https://www.hetzner.com/dns-console) as a Dynamic DNS (DDNS) Provider.</Overview>
   <Category>Network:DNS Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
@@ -17,10 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1634132245</DateInstalled>
+  <DateInstalled>1634133115</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>This Docker image will allow you to use the Hetzner DNS Service (https://www.hetzner.com/dns-console) as a Dynamic DNS (DDNS) Provider.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
