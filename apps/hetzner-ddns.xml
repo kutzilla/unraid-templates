@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/114777-support-hetzner-ddns/</Support>
   <Project>https://github.com/kutzilla/docker-hetzner-ddns</Project>
   <Overview/>
   <Category>Network:DNS Status:Beta</Category>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1633621554</DateInstalled>
+  <DateInstalled>1634132245</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
